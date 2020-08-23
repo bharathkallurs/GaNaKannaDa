@@ -13,6 +13,8 @@ Return True if it does, else False
 ಪೂರ್ತಿ ಸರಣಿಗೆ ಒಂದು for ಲೂಪ್ ಚಲಾಯಿಸಿ.
 ಅದರ ಒಳಗೆ ಒಂದು if ಶರತ್ತನ್ನು (condition) ಸೇರಿಸಿ. 
 key ಸರಣಿಯ ಯಾವುದಾದರೊಂದು ಸಂಖ್ಯೆಗೆ ಹೊಂದಿದರೆ  ಸರಿ (True) ಇಲ್ಲವಾದರೆ ತಪ್ಪು (False) ಕಳುಹಿಸಿ. 
+
+Time Complexity : O(n)
 """
 
 
