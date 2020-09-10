@@ -1,5 +1,5 @@
 """
-GaNaKannada: Selection Sort
+GaNaKannaDa: Selection Sort
 Problem: Given an array of integers, sort it in ascending (non-decreasing)
          order of values from lowest to highest.
 Example Input: array = [5, 3, 4, 2, 0, 1]
