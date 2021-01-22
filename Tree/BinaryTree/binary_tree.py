@@ -7,7 +7,7 @@ Binary Tree:
 Binary Tree is one of the non-linear data structures.
 It has a maximum of 2 children per node. The tree starts from root node
 at 0th level. Then proceeds to first level with left child and right child.
-It then goes ahead and branches further untill leaf nodes are reached.
+It then goes ahead and branches further until leaf nodes are reached.
 Leaf nodes are the ones without any children further.
 
 """
@@ -35,6 +35,10 @@ class Tree(object):
         Example, root node from level 0, root's children from level 1, and so on.
         We insert a node into the tree as soon as we see an empty space in the
         left most region in a given level.
+
+        ಬೈನರಿ ಟ್ರೀ ಗೆ ಹೊಸ ನೋಡನ್ನು ನಾವು ಸೇರಿಸುವಾಗ ಸಾಮಾನ್ಯವಾಗಿ ಪಾಲಿಸುವ ವಿಧಾನವೆಂದರೆ level order insertion.
+        ಅಂದರೆ ಘಟ್ಟದ ಅನುಸಾರವಾಗಿ ಸಾಗಿ ಹೊಸ ನೋಡನ್ನು ಸೇರಿಸುವುದು. ಯಾವ ಘಟ್ಟದಲ್ಲಿ ಯಾವುದೊ ಒಂದು ನೋಡಿಗೆ ಎಡ ಅಥವ ಬಲ
+        ಸಂತತಿ ಇರದಿದ್ದರೆ ಅಲ್ಲಿಗೆ ನಾವು ಈ ಹೊಸ ನೋಡನ್ನು ಮೊದಲು ಸೇರಿಸುತ್ತೇವೆ.
 
         Steps:
         1. Check if root node is null, if yes insert root node and return
@@ -113,6 +117,12 @@ class Tree(object):
         We ensure that we always delete nodes from right most end by
         copying the data of right most end's node to the node's data 
         that we actually want to delete
+
+        ಬೈನರಿ ಟ್ರಿಯಿಂದ ನೋಡೋಂದನ್ನು ತೆಗೆಯಬೇಕೆಂದಾಗ, ಮೊದಲಿಗೆ ಟ್ರೀ ಯಲ್ಲಿ ಕೊನೆಯ ಸಾಲಿನ 
+        ಅತಿ ಬಲಕ್ಕೆ ಇರುವ ನೋಡನ್ನು (ಇದನ್ನು deepest ನೋಡ್ ಅಂತಲೂ ಕರೆಯುತ್ತಾರೆ) ಆಯ್ಕೆಮಾಡಿಕೊಳ್ಳಬೇಕು.
+        ನಂತರ ನಾವು ಯಾವ ನೋಡನ್ನು ತೆಗೆಯಬೇಕೆಂದು ಇದ್ದೀವೋ, ಅದರ ದತ್ತಾಂಶವನ್ನು ನಮಗೆ ಡಿಲೀಟ್ 
+        ಮಾಡಬೇಕಿರುವ ದತ್ತಾಂಶದ ಜೊತೆ ಹೋಲಿಸುತ್ತಾ ಸಾಗಬೇಕು.
+
         Steps:
         1. Check if root node is null, if yes then return none
         2. Else check if root's left and right children are none.
